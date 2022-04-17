@@ -1,0 +1,52 @@
+﻿body {
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.childInfoBlock {
+    text-align: center;
+    height: 250px;
+}
+
+.imgBlock 
+{
+    max-width:200px;
+    max-height: 160px;
+    position: relative;
+    padding-top:20px;
+    padding-bottom:10px;
+    
+}
+
+
+.infoImage
+{
+    height:160px;
+}
+
+#main
+{
+    width:94%;
+    left:3%;
+    margin:auto;
+}
+
+.infoNameBlock{
+    width:100%;
+    text-align:center;
+    padding-top:20px;
+}
+
+.infoNameBlock a {
+    font-size: 1.3em;
+    color: black;
+}
+
+a:hover
+{
+    text-decoration:none;
+}

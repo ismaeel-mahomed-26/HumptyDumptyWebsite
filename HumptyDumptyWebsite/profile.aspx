@@ -1,0 +1,40 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="profile.aspx.cs" Inherits="M4.covid" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Humpty Dumpty Playschool</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" sizes="192x192" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+       <div class="row" id="header" >
+<%if (Session["parentID"]!=null){%><!-- #include file="nav.aspx" --><%}
+else
+{%><!-- #include file="outnav.aspx" --><%}%>
+
+    </div>
+    <div class="row">
+        <div class="col-12" style="height:50px; position:relative;"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1 col-12"></div>
+        <div class="col-sm-10 col-12">
+            <iframe src="./profile/default.aspx" frameborder="0" style="border:0;" allowfullscreen="" id="covidEmbed" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="col-sm-1 col-12"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-12" style="height:100px; position:relative;"></div>
+    </div>
+
+</body>
+</html>
